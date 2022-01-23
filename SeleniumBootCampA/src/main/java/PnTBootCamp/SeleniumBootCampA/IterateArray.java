@@ -13,20 +13,17 @@ public class IterateArray {
 		movies.add("Rush Hour"); //String form
 		movies.add("Sprider Man");
 		movies.add("Titanic");
-		
-		
-		for (int i=0; i<movies.size(); i++) //i is a variable
-			System.out.println(movies.get(i)); // get (int index)
-		
+				
 	ListIterator<String> ilmovies = movies.listIterator(movies.size());	// Import ListIterator (java.uti)
 		while (ilmovies.hasPrevious()){
 			String favmovies = ilmovies.previous();
 			System.out.println(favmovies);
 		}
 		
+		/*for (int i=0; i<movies.size(); i++) //i is a variable
+			System.out.println(movies.get(i)); // get (int index)
 		
-		
-		/*for (String favmovies: movies) {
+		for (String favmovies: movies) {
 			System.out.println(favmovies);
 		}
 		
